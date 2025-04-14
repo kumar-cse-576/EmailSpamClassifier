@@ -6,11 +6,9 @@ import sklearn
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-# Download required NLTK data
 nltk.download('punkt')
 nltk.download('stopwords')
 
-# Preprocessing function
 ps = PorterStemmer()
 
 
@@ -39,18 +37,15 @@ def transform_text(text):
     return " ".join(y)
 
 
-# Load the model and vectorizer
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 
-# Page configuration
 st.set_page_config(
     page_title="Spam Classifier",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
 
-# Pure Dark Theme with advanced styling
 st.markdown("""
     <style>
     :root {
@@ -195,7 +190,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# App Layout
 st.markdown('<div class="main">', unsafe_allow_html=True)
 st.markdown('<div class="title">🔍 Spam Classifier</div>', unsafe_allow_html=True)
 st.markdown(
@@ -208,16 +202,12 @@ if st.button("Analyze Message"):
     if not input_sms.strip():
         st.warning("Please enter a message to analyze")
     else:
-        # Preprocess
         transformed_sms = transform_text(input_sms)
 
-        # Vectorize
         vect_input = tfidf.transform([transformed_sms])
 
-        # Predict
         result = model.predict(vect_input)[0]
 
-        # Show result with animation
         with st.spinner('Analyzing...'):
             import time
 
