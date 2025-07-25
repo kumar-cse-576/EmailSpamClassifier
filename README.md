@@ -1,1 +1,1 @@
-model training : [https://drive.google.com/drive/mobile/folders/1SkCOcAS0Kqvuz-MJkkjbFr1GSue6Ms6m?mcp_token=eyJwaWQiOjE4MjQ5NDcsInNpZCI6ODY1MjUwNTQ1LCJheCI6IjdlNjZkNmUyYmEyZWU3OWQ3YmFkOGIxOWJkMmFmMjgyIiwidHMiOjE3Mjc3NDk1MjQsImV4cCI6MTczMDE2ODcyNH0.QSoQpLa4m_GoV8ihBvDP7KKobbEGx9MIfX1l6-xT4Lc](https://colab.research.google.com/drive/13licy3Y9MvWyo9T6kK5ponM4u2W4H8MP?usp=sharing)
+model training : https://colab.research.google.com/drive/13licy3Y9MvWyo9T6kK5ponM4u2W4H8MP?usp=sharing
